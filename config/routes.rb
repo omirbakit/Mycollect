@@ -17,5 +17,7 @@ Rails.application.routes.draw do
   get '/pages/users', to: 'pages#users'
   get '/pages/admin', to: 'pages#admin'
 
+  resources :collections, only: %i[index new create]
+
   root "pages#index"
 end

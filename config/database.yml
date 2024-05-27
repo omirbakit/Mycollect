@@ -82,3 +82,4 @@ production:
   database: my_collect_production
   username: my_collect
   password: <%= ENV["MY_COLLECT_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
